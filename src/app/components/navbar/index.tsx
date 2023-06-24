@@ -23,8 +23,8 @@ const LogoContainer = styled.div`
 
 export function Navbar() {
     return <NavbarContainer>
-        <LgoContainer>
+        <LogoContainer>
             <Logo></Logo>
-        </LgoContainer>
+        </LogoContainer>
     </NavbarContainer>
 }
