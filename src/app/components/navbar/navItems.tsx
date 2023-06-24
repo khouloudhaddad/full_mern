@@ -13,9 +13,9 @@ const ListContainer = styled.ul`
  `};
 `;
 
-const NavItem = styled.li<{menu?: any}`
- ${tw`
-    text-xs
+const NavItem = styled.li<{ menu?: any }>`
+  ${tw`
+    text-sm
     md:text-base
     text-black
     font-medium
@@ -26,19 +26,20 @@ const NavItem = styled.li<{menu?: any}`
     duration-300
     ease-in-out
     hover:text-gray-700
- `};
+  `};
 
- ${({ menu }) =>
-   menu &&
-   css`
+  ${({ menu }) =>
+    menu &&
+    css`
       ${tw`
-        text-white
-        text-xl
-        mb-3
-        focus:text-white
+      text-white
+      text-xl
+      mb-3
+      focus:text-white
     `};
-   `};
-`; 
+    `};
+`;
+
 export function NavItems() {
 
     const isMobile = useMediaQuery({ maxWidth: SCREENS.sm })
