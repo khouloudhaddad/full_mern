@@ -16,7 +16,9 @@ const PageContainer = styled.div`
 
 export function Homepage() {
     return <PageContainer>
+
         <Navbar />
         <TopSection />
+        
     </PageContainer>;
 }
