@@ -15,6 +15,6 @@ const PageContainer = styled.div`
 
 export function Homepage() {
     return <PageContainer>
-        Home page Index
+       <Navbar />
     </PageContainer>;
 }
