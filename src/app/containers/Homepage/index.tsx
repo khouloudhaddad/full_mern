@@ -4,6 +4,9 @@ import tw from 'twin.macro';
 import { Navbar } from '../../components/navbar';
 import { TopSection } from './topSection';
 import { BookCard } from '../../components/bookCard';
+import { Marginer } from "../../components/marginer";
+import { BookingSteps } from './bookingSteps';
+
 const PageContainer = styled.div`
     ${tw`
         flex
@@ -16,10 +19,15 @@ const PageContainer = styled.div`
 `;
 
 export function Homepage() {
-    return <PageContainer>
-
+    return (
+      <PageContainer>
         <Navbar />
         <TopSection />
+        <Marginer direction="vertical" margin="4em" />
         <BookCard />
-    </PageContainer>;
+        <Marginer direction="vertical" margin="10em" />
+        <BookingSteps />
+        <Marginer direction="vertical" margin="8em" />
+      </PageContainer>
+    );
 }
