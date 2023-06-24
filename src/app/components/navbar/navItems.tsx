@@ -4,6 +4,7 @@ import tw from 'twin.macro';
 import { Slide as Menu } from 'react-burger-menu';
 import {useMediaQuery} from 'react-responsive';
 import menuStyles from './menuStyles';
+import { SCREENS } from '../responsive';
 
 const ListContainer = styled.ul`
  ${tw`
