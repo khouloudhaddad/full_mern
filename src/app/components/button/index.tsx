@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { SCREENS } from "../../components/responsive";
 
 interface IButtonProps {
   theme?: "filled" | "outlined";
@@ -28,6 +29,9 @@ const BaseButton = styled.button`
     ease-in-out
     m-1
   `};
+  @media (max-width: ${SCREENS.sm}) {
+    flex: 1 0 100%;
+  }
 `;
 
 const OutlinedButton = styled(BaseButton)`
